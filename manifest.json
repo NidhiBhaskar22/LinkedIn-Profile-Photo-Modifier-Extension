@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Profile Image Replacer",
+  "version": "1.0",
+  "description": "Replaces profile images with a custom image.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Replace Profile Images"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["replacement.jpg", "icon.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
