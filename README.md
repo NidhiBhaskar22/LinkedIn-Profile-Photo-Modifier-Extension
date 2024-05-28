@@ -24,12 +24,3 @@
 3. Enable Developer mode.
 4. Click on "Load unpacked" and select the cloned/downloaded folder.
 5. The extension will be installed and ready to use.
-
-#### Feedback:
-For any issues, feedback, or suggestions, please feel free to [contact us](mailto:your-email@example.com). We'd love to hear from you!
-
-#### Credits:
-This extension was developed by [Your Name] and is licensed under the [MIT License](LICENSE). 
-
-#### Disclaimer:
-This extension is not affiliated with or endorsed by LinkedIn.
